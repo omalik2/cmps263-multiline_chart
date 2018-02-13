@@ -1,0 +1,37 @@
+h1 {
+    /* Center align heading*/
+    text-align: center;
+}
+
+.canvas {
+    display: block;
+    margin: auto;
+}
+
+.axis--x path {
+    /* Do not display x-axis's line*/
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.grid line {
+    /* The grid lines should be light grey with partial
+       opacity and crisp edges. Crisp edges are good for
+       straight lines. Do not use for curved ones. */
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    /* The border of the grid layout. For reduced clutter
+       we choose to have no grid outline. */
+    /* To do this, we can either set stroke-width to 0 or
+       set display to none. */ 
+    /* display: none; */
+    stroke-width: 0;    
+}
