@@ -11,15 +11,10 @@ var svg = d3.select("body").append("svg")
     .attr("class", "canvas")
     .attr("width", canvas.w )
     .attr("height", canvas.h),
-    //.style.display = "block"
-    //.style.margin = "auto",
     // Add a group element that will contain the actual plot 
     g = svg.append("g")
         // Align the group element so that padding is created from the top left.
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-svg.style.display = "block";
-svg.style.margin = "auto";
 
 /* Function expression (that is not hoisted compared to the
    normal function declaration). This function parses input
